@@ -1,0 +1,150 @@
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    direction: rtl;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    direction: rtl;
+}
+
+h1 {
+    color: #345cc4;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-group {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.info-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #777;
+}
+
+.info-group p {
+    color: #345cc4;
+    text-decoration: none;
+    background-color: #f5f5f5;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    cursor: default;
+    width: 90%;
+}
+
+.info-group p:hover {
+    background-color: #ddd;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #345cc4;
+}
+
+header img {
+    height: 9vh;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.change-btn {
+    width: 40%;
+    padding: 10px;
+    font-size: 100%;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin: auto;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.change-btn:hover {
+    background-color: #45a049;
+}
+
+#passwordChange {
+    margin-top: 20px;
+}
+
+#passwordChange input[type="password"] {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#passwordChange button[type="submit"] {
+    background-color: #345cc4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#passwordChange button[type="submit"]:hover {
+    background-color: #2a4a99;
+}
+
+.home-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-right: 5%;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #passwordChange input[type="password"] {
+        font-size: 110%;
+    }
+    #passwordChange button[type="submit"] {
+        font-size: 110%;
+    }
+    .home-btn {
+        width: 30%;
+        font-size: 80%;
+    }
+    h1 {
+        font-size: 25px;
+    }
+}

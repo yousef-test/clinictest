@@ -1,0 +1,175 @@
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    direction: rtl;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #345cc4;
+}
+
+header img {
+    height: 9vh;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #0056b3;
+}
+
+.doctors-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.doctors-list th,
+.doctors-list td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.doctors-list th {
+    background-color: #f2f2f2;
+    color: #0056b3;
+}
+
+.doctors-list td {
+    color: #333;
+}
+
+.doctors-list tr:hover {
+    background-color: #f2f2f2;
+}
+
+.home-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-right: 5%;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #0056b3;
+}
+
+.search-container {
+    display: flex;
+    position: relative;
+    text-align: right;
+    width: 80%;
+    padding: 10px;
+    margin-left: 2%;
+}
+
+.search {
+    padding: 8px;
+    font-size: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.fa-search {
+    font-size: 120%;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.work_days {
+    font-size: 95%;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-btn {
+        width: 30%;
+        font-size: 80%;
+    }
+    thead {
+        display: none;
+    }
+    table {
+        width: 99%;
+        border: 0;
+    }
+    tr {
+        display: block;
+        flex-direction: row-reverse;
+        margin-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+        font-size: 90%;
+    }
+    td:before {
+        content: attr(data-label);
+        flex: 1;
+        font-weight: bold;
+        left: 10px;
+        text-align: right;
+    }
+    td:nth-of-type(1):before {
+        content: "الاسم";
+    }
+    td:nth-of-type(2):before {
+        content: "التخصص";
+    }
+    td:nth-of-type(3):before {
+        content: "القسم";
+    }
+    td:nth-of-type(4):before {
+        content: "أيام الدوام";
+    }
+    td:nth-of-type(5):before {
+        content: "ساعات العمل";
+    }
+    td:last-child {
+        border-bottom: lightblue;
+    }
+    .search-container {
+        display: flex;
+        align-items: center;
+        margin-left: 65%;
+        width: 100%;
+    }
+    .search {
+        font-size: 120%;
+    }
+    .fa-search {
+        font-size: 120%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,232 @@
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    direction: rtl;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #345cc4;
+}
+
+header img {
+    height: 9vh;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.header-text {
+    font-weight: bold;
+    font-size: 24px;
+    color: #345cc4;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.appointment-section {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.title i {
+    font-size: 30px;
+    color: #007bff;
+}
+
+.title h2 {
+    display: inline-block;
+    margin-left: 10px;
+    color: #007bff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    direction: ltr;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.book-appointment-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+.book-appointment-btn:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+}
+
+.message2 {
+    text-align: right;
+    margin-top: 20px;
+    color: #ff8400;
+}
+
+.show-app {
+    color: rgb(211, 120, 15);
+    text-decoration: none;
+}
+
+.show-app:hover {
+    text-decoration: underline;
+}
+
+.home-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-right: 5%;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #0056b3;
+}
+
+.divhome-btn {
+    margin-top: 1%;
+}
+
+.search {
+    padding: 8px;
+    font-size: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.fa-search {
+    font-size: 120%;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .show-app {
+        font-size: 80%;
+    }
+    .message {
+        font-size: 90%;
+    }
+    button[type="submit"] {
+        font-size: 90%;
+    }
+    .home-btn {
+        width: 30%;
+        font-size: 80%;
+    }
+    thead {
+        display: none;
+    }
+    table {
+        margin-right: 0%;
+        position: relative;
+        width: 99%;
+        border: 0;
+    }
+    tr {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        border: 1px solid #b9b8b8;
+    }
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+    td::after {
+        content: attr(data-label);
+        flex: 1;
+        font-weight: bold;
+        right: 10px;
+        text-align: right;
+    }
+    td:nth-of-type(1)::after {
+        content: "اسم الطبيب";
+    }
+    td:nth-of-type(2)::after {
+        content: "التخصص";
+    }
+    td:nth-of-type(3)::after {
+        content: "ايام الدوام";
+    }
+    td:nth-of-type(4)::after {
+        content: "ساعات الدوام";
+    }
+    td:nth-of-type(5):after {
+        content: "حجز موعد";
+    }
+    .search {
+        font-size: 120%;
+    }
+    .fa-search {
+        font-size: 120%;
+        margin-bottom: 10px;
+    }
+}

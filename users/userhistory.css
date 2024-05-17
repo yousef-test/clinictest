@@ -1,0 +1,141 @@
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    direction: rtl;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-right: 5%;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #0056b3;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.back {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #345cc4;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #345cc4;
+}
+
+header img {
+    height: 9vh;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+h1 {
+    color: #345cc4;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+    thead {
+        display: none;
+    }
+    table {
+        width: 100%;
+        border: 0;
+    }
+    tr {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        border: 1px solid #b9b8b8;
+    }
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+    td:before {
+        content: attr(data-label);
+        flex: 1;
+        font-weight: bold;
+        right: 10px;
+        text-align: right;
+    }
+    td:nth-of-type(1):before {
+        content: "اسم الطبيب";
+    }
+    td:nth-of-type(2):before {
+        content: "تاريخ الموعد ";
+    }
+    td:nth-of-type(3):before {
+        content: "وقت الموعد";
+    }
+    td:last-child {
+        border-bottom: lightblue;
+    }
+    .home-btn {
+        width: 30%;
+        font-size: 80%;
+        background-color: #0056b3;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 150%;
+    }
+}

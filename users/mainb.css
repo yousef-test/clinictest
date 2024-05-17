@@ -1,0 +1,88 @@
+body {
+    background-image: url('mainback.png');
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: #345cc4;
+    height: 10vh;
+    text-align: right;
+}
+
+header img {
+    height: 9vh;
+    margin-top: 3px;
+}
+
+.heading-text {
+    font-weight: bold;
+    font-size: 24px;
+    color: #345cc4;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.go-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #345cc4;
+    transition: background-color 0.5s ease;
+}
+
+.go-btn:hover {
+    background-color: #2b4a90;
+}
+
+.go-btn i {
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.choose-div {
+    border-radius: 10%;
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(240, 240, 240, 0.95);
+    margin: auto;
+    margin-top: 15%;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+
+.choose-div:hover {
+    background-color: rgba(215, 215, 215, 0.8);
+}
+
+@media (max-width: 600px) {
+    .choose-div {
+        width: 70%;
+    }
+    .go-btn {
+        width: 70%;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .choose-div {
+        margin-top: 35%;
+    }
+}

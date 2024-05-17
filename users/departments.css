@@ -1,0 +1,153 @@
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    direction: rtl;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #345cc4;
+}
+
+header img {
+    height: 9vh;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.departments-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.departments-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.departments-table th,
+.departments-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.departments-table th {
+    background-color: #345cc4;
+    color: #fff;
+}
+
+.departments-table td {
+    width: 35%;
+}
+
+.departments-table tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+.showbtn {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 80%;
+    padding: 10px 20px;
+    background-color: #c4d1f1;
+    border: none;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    border-radius: 10%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.showbtn:hover {
+    background-color: #a3b6f9;
+    box-shadow: 2px 2px 10px #345cc4;
+    box-shadow: 1px 1px 2px #345cc4;
+}
+
+.home-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-right: 5%;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+    color: #345cc4;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-btn {
+        width: 30%;
+        font-size: 80%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    table {
+        margin-right: 0%;
+        position: relative;
+        width: 80%;
+        border: 0;
+    }
+    thead {
+        display: none;
+    }
+    tr {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        border: 1px solid #b9b8b8;
+    }
+    .departments-table td {
+        width: 90%;
+    }
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+    td:before {
+        content: attr(data-label);
+        flex: 1;
+        font-weight: bold;
+        right: 10px;
+        text-align: right;
+    }
+    td:nth-of-type(1):before {
+        content: "اسم القسم";
+    }
+    td:nth-of-type(2):before {
+        content: "اطباء القسم";
+    }
+    td:nth-of-type(3):before {
+        content: "";
+    }
+}
